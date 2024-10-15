@@ -14,4 +14,4 @@ print(str2.index("E", 4, 10))
 # print(str2.index("E",7,10))
 
 # 获取序列中某个元素出现的次数-count()
-print(str2.count("2"))
+print(str2.count("4"))

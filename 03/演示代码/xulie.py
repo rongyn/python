@@ -30,7 +30,6 @@ print("--------")
 # str3 = "ABCDEFG"
 
 print(str3[1:4])
-print(str3[1:])
 print(str3[1:4:2])
 print(str3[::])
 print(str3[::-1])

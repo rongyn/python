@@ -23,7 +23,7 @@ print(str3.rstrip())
 print(str3.strip())
 
 # 将字符串首字母大写的方法-title()
-str4 = "abcdefg"
+str4 = "abcdefgh"
 print(str4.title())
 print(str4)
 
