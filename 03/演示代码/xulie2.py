@@ -9,7 +9,7 @@ print(min(str2))
 
 # 获取元素索引:序列名.index(元素值,start,end)
 print(str2.index("E"))
-print(str2.index("E",4,10))
+print(str2.index("E", 4, 10))
 # substring not found
 # print(str2.index("E",7,10))
 

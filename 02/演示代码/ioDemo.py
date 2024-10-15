@@ -11,8 +11,8 @@
 # end:表示输出数据之后，以什么结尾，默认：end='\n'
 # \n:表示回车换行
 # \t:表示输出一个tab键
-print("aaaaaaaaaaaa",end="XXXXXXXX") 
-print("bbbbbbbbbbbb",end='\n')
+#print("aaaaaaaaaaaa",end="XXXXXXXX")
+#print("bbbbbbbbbbbb",end='\n')
 
 
 # max():计算最大值的方法
