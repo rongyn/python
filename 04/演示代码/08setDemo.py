@@ -7,11 +7,11 @@
 
 # 不能直接使用{}来定义set集合
 # <class 'dict'>
-# set2 = {}
+set2 = {}
 # set2 = {"allen"}
-# print(type(set2))
-set1 = {8,2,6,3,5,4,3,2}
-set2 = {2,3,9,4}
+print(type(set2))
+set1 = {8, 2, 6, 3, 5, 4, 3, 2}
+set2 = {2, 3, 9, 4}
 
 # {8, 5, 6}
 print(set1 - set2)

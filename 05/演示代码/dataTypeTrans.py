@@ -14,11 +14,11 @@
 
 # 2、str(其他类型)：将其他数据类型转为字符串
 # 将整数转为字符串
-student_id = str(12345)
-print(type(student_id))
-
+# student_id = str(12345)
+# print(type(student_id))
+#
 # 将列表转为字符串
-student_name = str(["allen","lucy","李雷","韩梅梅"])
+student_name = str(["allen", "lucy", "李雷", "韩梅梅"])
 print(type(student_name))
 print(student_name)
 
@@ -35,14 +35,25 @@ list1 = list(str2)
 print(type(list1))
 print(list1)
 
-tuple1 = (1,2,3,4,5)
+tuple1 = (1, 2, 3, 4, 5)
 list2 = list(tuple1)
 print(type(list2))
 print(list2)
 
 # 5、字符串和列表转元组的方法（tuple()）--课下练习
+l1 = (1, 2, 3, 4)
+str3 = "hay"
+tupel2 = tuple(l1)
+print(type(tupel2))
+print(tupel2)
+
+tupel3 = tuple(str3)
+print(type(tupel3))
+print(tupel3)
+
+
 # 6、dict():将一个元组转为字典
 # {'name': 'allen', 'name1': 'allen1'}
-dict1 = dict([("name","allen"),("name1","allen1")])
-print(type(dict1))
-print(dict1)
+# dict1 = dict([("name", "allen"), ("name1", "allen1")])
+# print(type(dict1))
+# print(dict1)
