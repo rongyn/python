@@ -52,13 +52,13 @@
 # 输入一个数字，判断是否被2、3整除的效果
 # 采用if嵌套语句
 data = int(input("请输入一个整数"))
-if(data%2==0):
-    if(data%3==0):
+if (data % 2 == 0):
+    if (data % 3 == 0):
         print("data是可以被2和3同时整除！")
     else:
         print("data是可以被2整除，但是不能被3整除！")
 else:
-    if(data%3==0):
+    if (data % 3 == 0):
         print("data是可以被3整除，但是不能被2整除")
     else:
         print("data既不能被2整除，也不能被3整除！")

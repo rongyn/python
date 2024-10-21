@@ -18,8 +18,6 @@
 # print(y)
 
 
-
-
 # 3.键盘录入月份的值，输出对应的季节。
 # month = int(input("请输入一个月份："))
 # if(month>=1 and month<=3):
@@ -43,22 +41,22 @@ c = 34
 # else:
 #     print(b)
 
-if(a>b):
-    if(a>c):
-        print("最大值是%d"%a)
+if (a > b):
+    if (a > c):
+        print("最大值是%d" % a)
     else:
-        print("最大值是%d"%c)
+        print("最大值是%d" % c)
 else:
-    if(b>c):
-        print("最大值是%d"%b)
+    if (b > c):
+        print("最大值是%d" % b)
     else:
-        print("最大值是%d"%c)
+        print("最大值是%d" % c)
 
 # 5、 练习：a = 30, b=9
 #  a & b
 a = 30
 b = 9
-print(a & b)  #8
+print(a & b)  # 8
 # a的原码：0b00000000 00000000 00000000 00011110
 # a的反码：0b00000000 00000000 00000000 00011110
 # a的补码：0b00000000 00000000 00000000 00011110

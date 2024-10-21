@@ -23,9 +23,9 @@
 
 # 单层for循环
 # 双层for循环
-for i in range(1,10):
-    for j in range(1,10):
-        print("请输入数据%2d:%2d"%(i,j))
+# for i in range(1, 10):
+#     for j in range(1, 10):
+#         print("请输入数据%2d:%2d" % (i, j))
 
 # 实现99乘法表
 '''
@@ -47,7 +47,7 @@ for i in range(1,10):
 #     for ncol in range(1,10):
 #         if(ncol <= nrow):
 #             print("%d*%d=%2d"%(ncol,nrow,ncol*nrow),end="\t")
-    
+
 #     # 内层for循环结束后，需要回车换行
 #     print()
 
@@ -56,41 +56,42 @@ for i in range(1,10):
 #     # 内层for循环控制列的输出，内层循环次数就节省了很多
 #     for ncol in range(1,nrow+1):
 #         print("%d*%d=%2d"%(ncol,nrow,ncol*nrow),end="\t")
-    
+
 #     # 内层for循环结束后，需要回车换行
 #     print()
 
 # 有一个列表list1 = [6,2,1,7,9,2]
 # 通过for循环实现列表元素的排序（从小到大排序），不能用sort方法。
 # 冒泡排序方法：比较相邻的两个数据，较大者往后移动
-list1 = [6,2,1,7,9,2]
+list1 = [6, 2, 1, 7, 9, 2]
+print(len(list1))
 # 外层控制排序的次数n是列表长度-1
-for n in range(0,len(list1)-1):
+for n in range(0, len(list1) - 1):
     # 内层for循环来做比较的次数,相邻的两个数据的比较，较大值往后排
     # -n的效果
-    for m in range(0,len(list1)-1-n):
-        if(list1[m] >= list1[m+1]):
+    for m in range(0, len(list1) - 1):
+        if (list1[m] >= list1[m + 1]):
             # 交换两个位置的数据
             # 1、定义临时遍历
-            # temp = list1[m]
-            # list1[m]=list1[m+1]
-            # list1[m+1]=temp
+            temp = list1[m]
+            list1[m] = list1[m + 1]
+            list1[m + 1] = temp
 
-            # 2、多变量赋值
-            # list1[m],list1[m+1] = list1[m+1],list1[m]
+        # 2、多变量赋值
+        # list1[m],list1[m+1] = list1[m+1],list1[m]
 
-            # 3、算术运算
-            # list1[m] = list1[m] + list1[m+1]
-            # list1[m+1] = list1[m] - list1[m+1]
-            # list1[m] = list1[m] - list1[m+1]
+        # 3、算术运算
+        # list1[m] = list1[m] + list1[m+1]
+        # list1[m+1] = list1[m] - list1[m+1]
+        # list1[m] = list1[m] - list1[m+1]
 
-            # 4、使用异或运算
-            list1[m] = list1[m] ^ list1[m+1]
-            list1[m+1] = list1[m] ^ list1[m+1]
-            list1[m] = list1[m] ^ list1[m+1]           
+        # 4、使用异或运算
+        # list1[m] = list1[m] ^ list1[m + 1]
+        # list1[m + 1] = list1[m] ^ list1[m + 1]
+        # list1[m] = list1[m] ^ list1[m + 1]
 print(list1)
 
-list2 = [6,2,1,7,9,2]
+list2 = [6, 2, 1, 7, 9, 2]
 # 快速排序方法
 # list2.sort()
 # print(list2)

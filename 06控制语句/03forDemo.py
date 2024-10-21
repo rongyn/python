@@ -29,8 +29,8 @@ for i in "0123456789":
     print(i)
 
 # 2、for的第二种结构
-for i in "0123456789":
-    # print("hello world")
-    print(i)
-else:
-    print(i)
+# for i in "0123456789":
+#     # print("hello world")
+#     print(i)
+# else:
+#     print(i)
