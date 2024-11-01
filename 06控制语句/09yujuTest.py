@@ -15,17 +15,17 @@
 
 # 上面的两种写法不是很方便，而且效率低一些，range()
 # jiecheng = 1
-# for i in range(100,0,-1):
+# for i in range(5, 0, -1):
 #     jiecheng *= i
 # print(jiecheng)
 
 # 对于一个四位的整数，倒序输出其每一位上的数字。例如，一个整数3421，分别显示和输出：1,2,4,3。
-# zhengshu = int(input("输入四位整数："))
+zhengshu = int(input("输入四位整数："))
 # 最好将该整数转为字符串
-# str1 = str(zhengshu)
+str1 = str(zhengshu)
 # str1[::-1]
-# for i in str1[::-1]:
-#     print(i)
+for i in str1[::-1]:
+    print(i)
 # list1 = list(str1)
 # reverse:反转列表
 # list1.reverse()
@@ -66,13 +66,13 @@
 # 1、获取100~999的整数
 # 2、将整数转为字符串
 # 3、循环遍历字符串，得出个十百位上的数字
-count = 0
-for a in range(100,1000):
-    # 获得个十百位数字的立方和的变量
-    he = 0
-    for i  in str(a):   
-        he += int(i)**3
-    if(he==a):
-        print("水仙花数为:"+str(a))
-        count += 1
-print("水仙花数总共有：%d个 。"%count)
+# count = 0
+# for a in range(100,1000):
+#     # 获得个十百位数字的立方和的变量
+#     he = 0
+#     for i  in str(a):
+#         he += int(i)**3
+#     if(he==a):
+#         print("水仙花数为:"+str(a))
+#         count += 1
+# print("水仙花数总共有：%d个 。"%count)

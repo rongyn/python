@@ -9,7 +9,7 @@ class phone():
     type = "智能手机"
 
     # 定义实例变量，并通过构造方法来初始化
-    def __init__(self,brand,color,price,size,memory,process):
+    def __init__(self, brand, color, price, size, memory, process):
         # 实例变量初始化
         self.brand = brand
         self.color = color
@@ -17,19 +17,22 @@ class phone():
         self.price = price
         self.memory = memory
         self.process = process
+
     # 定义手机打电话的功能
-    def call(self,telephoneId):
-        print("打电话给"+telephoneId)
+    def call(self, telephoneId):
+        print("打电话给" + telephoneId)
 
     def photo(self):
-        print("手机价格为"+str(self.price)+",可以用来自拍！！")
+        print("手机价格为" + str(self.price) + ",可以用来自拍！！")
+
     # 用来输出所有的成员变量
     def info(self):
-        print("手机的品牌为:%s,价格为：%s,颜色为:%s,尺寸为：%s"%(self.brand,self.price,self.color,self.size))
+        print("手机的品牌为:%s,价格为：%s,颜色为:%s,尺寸为：%s" % (self.brand, self.price, self.color, self.size))
+
 
 # 创建对象调用方法
 # 先来创建一个小米11手机
-xiaomi11 = phone("小米","black",2999,6,16,"高通骁龙860")
+xiaomi11 = phone("小米", "black", 2999, 6, 16, "高通骁龙860")
 # 访问小米11的属性和行为
 print(xiaomi11.brand)
 print(xiaomi11.memory)

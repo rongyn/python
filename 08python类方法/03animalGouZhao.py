@@ -20,6 +20,8 @@ class animal():
     # def info(self,xingming,xingbie):
     #     self.name = xingming
     #     self.sex = xingbie
+
+
     # 定义构造方法，用来初始化动物的名称和性别
     # 1、无参数的构造方法，方法名是固定的
     def __init__(self):

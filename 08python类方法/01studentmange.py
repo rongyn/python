@@ -15,43 +15,44 @@
 def studentManage():
     # 循环实现学员的增删改查动作，需要写一个死循环
     # 定义一个初始化的学员名单
-    studentName = ["小王","小李"]
-    while(True):
+    studentName = ["小王", "小李"]
+    while (True):
         print("====================学员管理菜单====================")
         print("1-增加新学员  2-更新   3-删除学员   4-查询    5-退出")
         print("===================================================")
         choice = int(input("请输入菜单编号："))
-        if(choice == 1):
+        if (choice == 1):
             print("====================新增新学员====================")
             name = input("请输入新学员的名称：")
             studentName.append(name)
             # 查询增加后的学员名单
-            print("增加后的学员名单为: %s"%studentName)     
-        elif(choice==2):
+            print("增加后的学员名单为: %s" % studentName)
+        elif (choice == 2):
             print("====================更新学员信息====================")
-            print("现在学员名单为: %s"%studentName)
+            print("现在学员名单为: %s" % studentName)
             nameOld = input('请输入要更新的学员的姓名：')
             nameNew = input('请输入要更新后的学员姓名：')
-            studentName[studentName.index(nameOld)]=nameNew
-            print("更新后的学员名单为: %s"%studentName)
-        elif(choice==3):
+            studentName[studentName.index(nameOld)] = nameNew
+            print("更新后的学员名单为: %s" % studentName)
+        elif (choice == 3):
             print("====================删除学员====================")
-            print("现在学员名单为: %s"%studentName)
+            print("现在学员名单为: %s" % studentName)
             nameDel = input('请输入要删除的学员的姓名：')
             studentName.remove(nameDel)
-            print("更新后的学员名单为: %s"%studentName)
-        elif(choice==4):
+            print("更新后的学员名单为: %s" % studentName)
+        elif (choice == 4):
             print("====================查询学员信息====================")
             # 实现把人名都遍历出来，并给他们一个编号
             id = 0
             for name in studentName:
                 id += 1
-                print("学生%d号的姓名为：%s"%(id,name))
-        elif(choice==5):
+                print("学生%d号的姓名为：%s" % (id, name))
+        elif (choice == 5):
             print("====================欢迎再回来！！====================")
             break
         else:
             print("不好意思，输入的菜单编号不正确！！！！")
+
 
 # 调用方法执行
 studentManage()
