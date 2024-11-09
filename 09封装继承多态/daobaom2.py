@@ -1,12 +1,13 @@
 # 导入m1的代码
 # 1、直接使用import导入
-# import m1
+import daobaom1
+
 # 可以使用导入的模块名.方法名()，来调用执行方法
-# m1.palyGame()
+daobaom1.palyGame()
 
 # 创建student对象
-# stu1 = m1.student()
-# stu1.study()
+stu1 = daobaom1.student()
+stu1.study()
 
 # 2、精确导入：也要先打开m1查看playGame才能导入过来，但是只要一查看，顺序代码就执行了
 # from m1 import playGame,student
@@ -25,4 +26,4 @@
 # 导包的时候是把if __name__=="__main__"也导过来了
 # __name__在m1执行的时候是等于__main__
 # __name__但是在m2执行的时候是等于m1的，所以就不再执行m1中的调试代码了
-from m1 import playGame,student
+from daobaom1 import playGame, student

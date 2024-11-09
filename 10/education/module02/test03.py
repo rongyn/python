@@ -11,7 +11,7 @@ sys.path.append(path)
 # 下面就能够导入该目录下的模块或者包（有__init__.py文件的文件夹）
 # 要带包导入模块
 from module01.test01 import student
-from  module01.test02 import func
+from module01.test02 import func
 stu = student()
 print(stu.add(12,23))
 func()

@@ -20,9 +20,8 @@
 # 预测下面的代码会出现索引越界的问题
 from logging import exception
 
-
-try:  #对try代码块中的语法进行监测
-    list01 = [1,2,3,4,5,6]
+try:  # 对try代码块中的语法进行监测
+    list01 = [1, 2, 3, 4, 5, 6]
     print(list01[1])
     print(list01[6])
     # print(1/0)

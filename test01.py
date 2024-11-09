@@ -12,7 +12,6 @@
 # print(len(L))
 import random
 
-
 # L.pop()
 # print(L)
 # del L[-1]
@@ -218,17 +217,58 @@ import random
 # print(jiecheng)
 
 
-def display_message():
-    print("我学到了定义函数和调用")
+# def display_message():
+#     print("我学到了定义函数和调用")
+#
+#
+# display_message()
+#
+#
+# def favorite_book(title):
+#     print("one of my favorite books is %s" % title)
+#
+#
+# favorite_book("Alice in Wonderland")
 
 
-display_message()
+# names = ["zhangsan", "lisi", "wangwu"]
+# message = f"hi,{names[0].title()}"
+# print(message)
+# names[0] = 'heihei'
+# print(names)
+# names.append('33')
+# # print(names)
+# # names.insert(1, '56')
+# # print(names)
+# # del names[1]
+# # names.pop()
+# # print(names)
+# a = '33'
+# names.remove(a)
+# print(a)
 
 
-def favorite_book(title):
-    print("one of my favorite books is %s" % title)
-
-
-favorite_book("Alice in Wonderland")
-
-
+invite_person = ['mom', 'dad', 'grandma']
+print(f"一起共进晚餐吧：{','.join(invite_person)}")
+print(f"来不了了：", invite_person[2])
+invite_person[2] = 'sister'
+print(f"替换姐姐：{','.join(invite_person)}")
+print(invite_person)
+invite_person.insert(0, 'hasband')
+print(invite_person)
+invite_person.append('brother')
+# print(invite_person)
+# invite_person.pop()
+# print(invite_person)
+# invite_person.pop()
+# print(invite_person)
+# invite_person.pop(0)
+# print(invite_person)
+# del invite_person[0]
+# del invite_person[0]
+# print(invite_person)
+print(invite_person)
+# invite_person.sort()
+print(invite_person)
+invite_person.reverse()
+print(invite_person)
